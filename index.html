@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cricket Prediction VIP</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #000000, #0f2027, #203a43);
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+.profile img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid #00ffcc;
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 15px 0 5px;
+    color: #00ffcc;
+}
+
+p {
+    font-size: 16px;
+    opacity: 0.85;
+}
+
+/* Live Counter */
+.counter-box {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #00ffcc;
+    font-weight: bold;
+}
+
+/* Button */
+.join-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 35px;
+    background: #00ffcc;
+    color: #000;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.join-btn:hover {
+    background: #00cc99;
+    transform: scale(1.08);
+}
+
+/* Stats */
+.stats {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.box {
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 12px;
+    width: 100px;
+}
+
+.box h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.box span {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.live {
+    color: red;
+    font-weight: bold;
+    animation: blink 1s infinite;
+    margin-top: 10px;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0.3;}
+    100% {opacity: 1;}
+}
+
+.footer {
+    margin-top: 40px;
+    font-size: 12px;
+    opacity: 0.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="profile">
+        <img src="https://via.placeholder.com/130" alt="Profile">
+    </div>
+
+    <h1>🔥 Cricket Prediction VIP 🔥</h1>
+    <p>India No.1 Cricket Prediction Channel 🏏</p>
+
+    <div class="live">● LIVE MATCH PREDICTION RUNNING</div>
+
+    <!-- Auto Counter -->
+    <div class="counter-box">
+        🔥 <span id="counter">1250</span> Users Joined Today
+    </div>
+
+    <a href="https://t.me/+6dyv15kElhQ2MDg1" class="join-btn">JOIN TELEGRAM NOW</a>
+
+    <div class="stats">
+        <div class="box">
+            <h2>50K+</h2>
+            <span>Members</span>
+        </div>
+        <div class="box">
+            <h2>98%</h2>
+            <span>Win Rate</span>
+        </div>
+        <div class="box">
+            <h2>Daily</h2>
+            <span>Tips</span>
+        </div>
+    </div>
+
+    <div class="footer">
+        ⚠️ Disclaimer: This is for educational purposes only
+    </div>
+
+</div>
+
+<script>
+// Auto Counter Script
+let count = 1250;
+
+setInterval(() => {
+    let increase = Math.floor(Math.random() * 5) + 1; // 1-5 random
+    count += increase;
+    document.getElementById("counter").innerText = count;
+}, 3000); // हर 3 सेकंड में बढ़ेगा
+</script>
+
+</body>
+</html>
